@@ -931,8 +931,8 @@ class TK_Shortcode
         //total line
         $total_line = sprintf('<tr><td colspan="3">%1$s</td> <td>%2$s</td></tr>', __('Total', 'woocommerce'), self::get_order()->get_formatted_order_total());
 
-        return sprintf(
-            '<table>%1$s<tbody>%2$s %3$s %4$s %5$s %6$s</tbody></table>',
+        $table = sprintf(
+            '<table>%1$s<tbody>%2$s %3$s %4$s %5$s %6$s</tbody></table></div>',
             $table_head,
             self::get_order_lines_html(self::get_order(), true),
             $subtotal_line,
@@ -940,6 +940,8 @@ class TK_Shortcode
             $tax_line,
             $total_line
         );
+
+        return '<div style="max-width: 100%; overflow-x: auto;">'  .$table . '</div>';
     }
 
     public static function print_order_details_full(): string

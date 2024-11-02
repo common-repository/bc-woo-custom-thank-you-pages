@@ -20,7 +20,7 @@ class Config
     const SESSION_KEY = 'bc_tk_session_key';
     const KEY_CHECK_OPTION = 'bc_woo_custom_tk_check_option_key';
     const LICENSE_KEY_OPTION = 'bc_woo_custom_tk_stored_license_key';
-    const PLUGIN_VERSION_NUMBER = 112;
+    const PLUGIN_VERSION_NUMBER = 115;
     const OPTION_NAME = 'bc_menu_bar_cart_option_name';
     const IS_PRO = false;
     const LICENSE_CHECK_URL = "https://api.gotkey.io/public/activate/30837999853190265244496741031/14346c08-0020-4bba-bbdb-f1f1fae14f8f/30895721584086733288781299651";
